@@ -3,9 +3,9 @@
     <modelVersion>4.0.0</modelVersion>
 
 
-    <name>spring-users-rests-in-peace</name>
+    <name>springUsersRestsInPeace</name>
     <groupId>io.romeosarkar10x.learn</groupId>
-    <artifactId>spring-users-rests-in-peace</artifactId>
+    <artifactId>springUsersRestsInPeace</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
     <url>https://github.com/romeosarkar10x-learn/spring-users-rests-in-peace</url>
