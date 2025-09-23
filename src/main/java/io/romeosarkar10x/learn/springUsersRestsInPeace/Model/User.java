@@ -1,4 +1,4 @@
-package io.romeosarkar10x.learn.springusersrestsinpeace.Model;
+package io.romeosarkar10x.learn.springUsersRestsInPeace.Model;
 
 import java.util.UUID;
 import java.time.LocalDateTime;

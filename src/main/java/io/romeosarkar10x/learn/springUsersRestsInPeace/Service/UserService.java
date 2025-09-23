@@ -1,11 +1,10 @@
-package io.romeosarkar10x.learn.springusersrestsinpeace.Service;
+package io.romeosarkar10x.learn.springUsersRestsInPeace.Service;
 
 import java.util.Optional;
 import java.util.UUID;
 import java.util.List;
 
-import io.romeosarkar10x.learn.springusersrestsinpeace.Model.User;
-
+import io.romeosarkar10x.learn.springUsersRestsInPeace.Model.User;
 
 public interface UserService {
     public User createUser(User user);

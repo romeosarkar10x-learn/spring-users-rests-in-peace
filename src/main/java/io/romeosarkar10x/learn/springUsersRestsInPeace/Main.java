@@ -1,6 +1,6 @@
-package io.romeosarkar10x.learn.springusersrestsinpeace;
+package io.romeosarkar10x.learn.springUsersRestsInPeace;
 
-import io.romeosarkar10x.learn.springusersrestsinpeace.Config.AppConfig;
+import io.romeosarkar10x.learn.springUsersRestsInPeace.Config.AppConfig;
 
 import jakarta.servlet.ServletRegistration;
 import org.springframework.web.servlet.DispatcherServlet;

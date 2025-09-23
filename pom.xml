@@ -7,6 +7,7 @@
     <groupId>io.romeosarkar10x.learn</groupId>
     <artifactId>spring-users-rests-in-peace</artifactId>
     <version>1.0</version>
+    <packaging>war</packaging>
     <url>https://github.com/romeosarkar10x-learn/spring-users-rests-in-peace</url>
 
     <properties>
@@ -48,6 +49,26 @@
             <groupId>jakarta.validation</groupId>
             <artifactId>jakarta.validation-api</artifactId>
             <version>3.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.20.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.20.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>3.0-rc5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jspecify</groupId>
+            <artifactId>jspecify</artifactId>
+            <version>1.0.0</version>
         </dependency>
     </dependencies>
 

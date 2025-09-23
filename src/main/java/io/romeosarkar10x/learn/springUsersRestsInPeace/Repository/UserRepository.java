@@ -1,14 +1,16 @@
-package io.romeosarkar10x.learn.springusersrestsinpeace.Repository;
+package io.romeosarkar10x.learn.springUsersRestsInPeace.Repository;
 
 import org.springframework.data.cassandra.repository.CassandraRepository;
 import org.springframework.data.cassandra.repository.Query;
 
-import io.romeosarkar10x.learn.springusersrestsinpeace.Model.User;
+import io.romeosarkar10x.learn.springUsersRestsInPeace.Model.User;
+import org.springframework.stereotype.Repository;
 
 import java.util.UUID;
 import java.util.Optional;
 import java.util.List;
 
+@Repository
 public interface UserRepository extends CassandraRepository<User, UUID> {
 
     @Query("SELECT * FROM users WHERE username = ?0 ALLOW FILTERING")

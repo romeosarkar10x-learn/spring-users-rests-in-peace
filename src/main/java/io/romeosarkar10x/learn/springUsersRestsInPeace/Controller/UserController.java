@@ -1,19 +1,20 @@
-package io.romeosarkar10x.learn.springusersrestsinpeace.Controller;
+package io.romeosarkar10x.learn.springUsersRestsInPeace.Controller;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
-import io.romeosarkar10x.learn.springusersrestsinpeace.Model.User;
+import io.romeosarkar10x.learn.springUsersRestsInPeace.Model.User;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import io.romeosarkar10x.learn.springusersrestsinpeace.Service.UserService;
+import io.romeosarkar10x.learn.springUsersRestsInPeace.Service.UserService;
 
+@RestController
 @RequestMapping("/api/user")
 public class UserController {
     private final UserService userService;
@@ -33,13 +34,13 @@ public class UserController {
         }
     }
 
-    @GetMapping
+    @GetMapping("/all")
     public ResponseEntity<List<User>> getAllUsers() {
         List<User> users = userService.getAllUsers();
         return ResponseEntity.ok(users);
     }
 
-    @GetMapping("/${id}")
+    @GetMapping("/{id}")
     public ResponseEntity<?> getUserById(@PathVariable UUID id) {
         var user = userService.getUserById(id);
 

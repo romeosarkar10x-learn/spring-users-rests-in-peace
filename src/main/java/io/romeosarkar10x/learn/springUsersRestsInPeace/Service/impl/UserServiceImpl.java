@@ -1,14 +1,15 @@
-package io.romeosarkar10x.learn.springusersrestsinpeace.Service.impl;
+package io.romeosarkar10x.learn.springUsersRestsInPeace.Service.impl;
 
-import java.time.LocalDateTime;
 import java.util.UUID;
 import java.util.Optional;
 import java.util.List;
 
-import io.romeosarkar10x.learn.springusersrestsinpeace.Model.User;
-import io.romeosarkar10x.learn.springusersrestsinpeace.Service.UserService;
-import io.romeosarkar10x.learn.springusersrestsinpeace.Repository.UserRepository;
+import io.romeosarkar10x.learn.springUsersRestsInPeace.Model.User;
+import io.romeosarkar10x.learn.springUsersRestsInPeace.Service.UserService;
+import io.romeosarkar10x.learn.springUsersRestsInPeace.Repository.UserRepository;
+import org.springframework.stereotype.Service;
 
+@Service
 public class UserServiceImpl implements UserService {
     private final UserRepository userRepository;
 
