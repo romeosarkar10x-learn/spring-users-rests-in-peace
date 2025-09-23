@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import io.romeosarkar10x.learn.springUsersRestsInPeace.Service.UserService;
 
 @RestController
-@RequestMapping("/api/user")
+@RequestMapping("/api")
 public class UserController {
     private final UserService userService;
 
@@ -24,7 +24,7 @@ public class UserController {
         this.userService = userService;
     }
 
-    @PostMapping("/create")
+    @PostMapping("/user/create")
     public ResponseEntity<?> createUser(@Valid @RequestBody User user) {
         try {
             User createdUser = userService.createUser(user);
@@ -34,13 +34,13 @@ public class UserController {
         }
     }
 
-    @GetMapping("/all")
+    @GetMapping("/users")
     public ResponseEntity<List<User>> getAllUsers() {
         List<User> users = userService.getAllUsers();
         return ResponseEntity.ok(users);
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/user/{id}")
     public ResponseEntity<?> getUserById(@PathVariable UUID id) {
         var user = userService.getUserById(id);
 
@@ -64,7 +64,7 @@ public class UserController {
     }
      */
 
-    @PutMapping("/update")
+    @PutMapping("/user/update")
     public ResponseEntity<?> updateUser(@RequestBody User user) {
         try {
             User updatedUser = userService.updateUser(user);
@@ -74,7 +74,7 @@ public class UserController {
         }
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/user/{id}")
     public ResponseEntity<?> deleteUser(@PathVariable UUID id) {
         boolean status = userService.deleteUser(id);
         if(status) {
@@ -84,7 +84,7 @@ public class UserController {
         }
     }
 
-    @GetMapping("/count")
+    @GetMapping("/user/count")
     public ResponseEntity<?> getCount() {
         return ResponseEntity.ok(userService.getCount());
     }
