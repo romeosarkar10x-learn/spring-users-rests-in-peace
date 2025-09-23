@@ -1,3 +1,8 @@
 /.idea
 /target
-/tomcat_instance
+/tomcat_instance/bin
+/tomcat_instance/lib
+/tomcat_instance/logs
+/tomcat_instance/temp
+/tomcat_instance/webapps
+/tomcat_instance/work
